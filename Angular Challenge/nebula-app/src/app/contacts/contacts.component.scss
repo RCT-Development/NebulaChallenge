@@ -1,0 +1,59 @@
+mat-drawer-container {
+    height: 100%;
+}
+
+.contacts-container
+{
+    padding: 50px;
+    background-color: #f3f6f4;
+}
+
+.search {
+    margin-bottom: 20px;
+    background-color: #dddddd;
+    border-radius: 5px;
+    height: 33px;
+}
+
+.contact {
+    margin: 5px;
+}
+
+.item {
+    float:left;
+    padding-left: 50%;
+    padding: 0px 0px 0px 16px !important;
+    border: none;
+    vertical-align: middle;
+    height: 48px;
+    line-height: 48px;
+}
+
+.active-card {
+    background-color: #e2e2e2;
+}
+
+.logo {
+    background-color:#54a4e1;
+}
+
+.mat-fab {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    letter-spacing: -3px;
+}
+
+.contacts-header {
+    color: #c7c7c7;
+    padding-bottom: 15px;
+}
+
+.search-input {
+    border-width: 0;
+    outline: 0;
+    background-color: #dddddd;
+    height:90%;
+    width: 95%;
+    border-radius: 5px;
+}

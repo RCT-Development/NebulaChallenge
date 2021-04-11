@@ -1,0 +1,23 @@
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$nebula-app-primary: mat-palette($mat-indigo);
+$nebula-app-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$nebula-app-warn: mat-palette($mat-red);
+
+$nebula-app-theme: mat-light-theme((
+  color: (
+    primary: $nebula-app-primary,
+    accent: $nebula-app-accent,
+    warn: $nebula-app-warn,
+  )
+));
+
+
+@include angular-material-theme($nebula-app-theme);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

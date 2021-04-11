@@ -1,0 +1,56 @@
+
+    <mat-drawer-container hasBackdrop="false" autosize >
+        <mat-drawer class="contacts-container" opened mode="side" >
+            <div class="search">
+                <input placeholder="Search" class="search-input" [(ngModel)]="query"/>
+            </div>
+            <div class="contacts-header">CONTACTS</div>
+            <div *ngFor="let contact of contacts | search:query">
+                
+                <mat-card class="contact" (click)="this.activeContact = contact" style="cursor: pointer;" [class.active-card]="this.activeContact == contact">
+                    <mat-card-content>
+                        <div style="float:left; padding-right:15px;">
+                            <button mat-fab class="logo">{{contact.firstName[0]}}  {{contact.lastName[0]}}</button>
+                        </div>
+                        <div>
+                            <span>
+                                <strong>{{contact.firstName}} {{contact.lastName}} </strong>
+                            </span>
+                            <span>{{contact.cellNumber}}</span>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </mat-drawer>
+        <mat-drawer-content >
+            <div style="padding:40px;" >
+                <mat-card class="mat-elevation-z8">
+                    <mat-card-title>{{activeContact.firstName}} {{activeContact.lastName}}</mat-card-title>
+                    <mat-card-content>
+                        <div style="padding:20px; display:grid;  grid-template-columns: auto auto;">
+                            <div>
+                                <div class="mat-small">Cellphone:</div> 
+                                <div class="body-1">{{activeContact.cellNumber}}</div>    
+                            </div>
+                            <div>
+                                <div class="mat-small">Address:</div> 
+                                <div class="body-1">{{activeContact.address}}</div>
+                            </div>
+                            <div>
+                                <div class="mat-small">Email:</div> 
+                                <div class="body-1">{{activeContact.email}}</div>
+                            </div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div style="padding:40px;">
+                <div class="mat-display-1">Contact Bio:</div> 
+                <div class="body-1">{{activeContact.bio}}</div>
+            </div>
+            
+        </mat-drawer-content>
+          
+       
+      </mat-drawer-container>
+
