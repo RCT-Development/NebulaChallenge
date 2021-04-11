@@ -1,2 +1,2 @@
 # Angular Challenge
-Site hosted at https://competent-borg-370357.netlify.app/contacts
+You can view the hosted site at https://competent-borg-370357.netlify.app
