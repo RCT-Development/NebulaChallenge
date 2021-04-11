@@ -10,10 +10,12 @@
 # Question 2:
 1. 
 	Because the == operator does type coercion to which only checks value and not the type of a variable.
-2. 
+
+```
 	function compareIt(num1, num2) {
 	    return num1 === num2;
 	}
+```
 
 # Question 3:
 1. 
