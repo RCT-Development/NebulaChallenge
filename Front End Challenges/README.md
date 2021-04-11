@@ -2,11 +2,14 @@
 1. 
 	#firstDiv will be red, #secondDiv will be orange
 2. 
-	document.getElementById('firstDiv').style = 'background-color:pink';
-3. 
+```
+document.getElementById('firstDiv').style = 'background-color:pink';
+```
+3.
+```
 	document.getElementById('secondDiv').classList.add('yellow-card'); 
 	(note div will still not be yellow as Id selector takes precedence)
-
+```
 # Question 2:
 1. 
 	Because the == operator does type coercion to which only checks value and not the type of a variable.
