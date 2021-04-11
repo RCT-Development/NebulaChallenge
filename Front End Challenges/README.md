@@ -3,7 +3,7 @@
 	#firstDiv will be red, #secondDiv will be orange
 2. 
 ```
-document.getElementById('firstDiv').style = 'background-color:pink';
+	document.getElementById('firstDiv').style = 'background-color:pink';
 ```
 3.
 ```
